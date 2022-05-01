@@ -1,0 +1,97 @@
+<html>
+<head><title>Тест из нескольких задач по географии</title>
+<style>
+p {
+ font-size:20px;
+}
+input {
+ font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:#d9ffd6;">
+<p>Выполните задания теста по географии:</p>
+<p>Столица Японии = <input type="text" id="z_1"></p>
+<p>Столица Китая = <input type="text" id="z_2"></p>
+<p>Столица России = <input type="text" id="z_3"></p>
+<p>Самая протяженная река в мире = <input type="text" id="z_4"></p>
+<p>Сколько всего океанов = <input type="text" id="z_5"></p>
+<p>Город-государство = <input type="text" id="z_6"></p>
+<p>Самое глубокое озеро  = <input type="text" id="z_7"></p>
+<p>Самое мелководное море = <input type="text" id="z_8"></p>
+<p>Самая высокая гора = <input type="text" id="z_9"></p>
+<p>В какой стране больше всего живет людей = <input type="text" id="z_10"></p>
+<p>Самая полноводная река = <input type="text" id="z_11"></p>
+<p>Добавьте недостающий цвет в флаге Росиии:белый,синий,... = <input type="text" id="z_12"></p>
+<button onclick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+<script>
+function proverit(){
+pr_otv_zadachi_1 ="Токио";
+pr_otv_zadachi_2 = "Пекин";
+pr_otv_zadachi_3 = "Москва";
+pr_otv_zadachi_4 = "Амазонка";
+pr_otv_zadachi_5 = "5";
+pr_otv_zadachi_6 = "Сингапур";
+pr_otv_zadachi_7 = "Байкал";
+pr_otv_zadachi_8 = "Азовское";
+pr_otv_zadachi_9 = "Эверест";
+pr_otv_zadachi_10 = "Китай";
+pr_otv_zadachi_11 = "Амазонка";
+pr_otv_zadachi_12 = "Красный";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+otv_uch_4 = document.getElementById('z_4').value;
+otv_uch_5 = document.getElementById('z_5').value;
+otv_uch_6 = document.getElementById('z_6').value;
+otv_uch_7 = document.getElementById('z_7').value;
+otv_uch_8 = document.getElementById('z_8').value;
+otv_uch_9 = document.getElementById('z_9').value;
+otv_uch_10 = document.getElementById('z_10').value;
+otv_uch_11 = document.getElementById('z_11').value;
+otv_uch_12 = document.getElementById('z_12').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+if(otv_uch_4 == pr_otv_zadachi_4){
+ball +=1;
+}
+if(otv_uch_5 == pr_otv_zadachi_5){
+ball +=1;
+}
+if(otv_uch_6 == pr_otv_zadachi_6){
+ball +=1;
+}
+if(otv_uch_7 == pr_otv_zadachi_7){
+ball +=1;
+}
+if(otv_uch_8 == pr_otv_zadachi_8){
+ball +=1;
+}
+if(otv_uch_9 == pr_otv_zadachi_9){
+ball +=1;
+}
+if(otv_uch_10 == pr_otv_zadachi_10){
+ball +=1;
+}
+if(otv_uch_11 == pr_otv_zadachi_11){
+ball +=1;
+}
+if(otv_uch_12 == pr_otv_zadachi_12){
+ball +=1;
+}
+vsego_zadach = 12;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+</body>
+</html>
